@@ -42,6 +42,8 @@ The proposal offers a strong, high-visibility outcome in RAG. To ensure success,
 
 **Company / Org:** Microsoft  
 **Challenge Advisor:** Vikas Goyal, goyal3vikas@gmail.com  
+**AI Coach:** Alexandra Ladyzhensky, alexandra.ladyzhensky@breakthroughtech.org
+
 **Program:** Break Through Tech AI Studio - Fall 2026  
 
 ---
