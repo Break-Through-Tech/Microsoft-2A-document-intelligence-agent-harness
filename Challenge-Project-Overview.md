@@ -62,13 +62,17 @@ Functional completeness, Answer quality (factual grounding), Citation accuracy, 
 
 ### Project Milestones
 Use these milestones to guide your work. Your team will create a GitHub Projects board to track tasks within each milestone.
-| Month | Milestone | Key Activities |
-|-------|-----------|----------------|
-| **September** | Data Exploration & Preprocessing | Develop ingestion scripts for PDF/Word, define chunking strategies, and implement initial vector storage for unstructured text. |
-| **October** | Feature Engineering & Baseline Modeling | Construct retrieval pipelines, implement semantic search, and deploy baseline RAG models to evaluate information extraction accuracy. |
-| **November** | Model Optimization & Evaluation | Perform hyperparameter tuning on retrieval nodes, validate grounding and citation precision, and stress-test system performance. |
-| **December** | Insights, Deliverables & Presentation | Finalize the enterprise-ready interface, package documentation, and present business impact reports based on the optimized agent logic. |
 
+| Month | Milestone | Key Activities |
+| :--- | :--- | :--- |
+| September | Harness Architecture, Ingestion & Baseline Evaluation | • Define standard agent interfaces and contract schemas for document processing tasks.<br>• Set up document ingestion pipelines for synthetic and public PDF corpora.<br>• Establish baseline benchmarking suite to measure tool-calling accuracy, retrieval precision, and task execution times.<br>• Implement basic single-agent document parsing workflows. |
+| October | Multi-Agent Orchestration & Evaluation Framework | • Construct an agent evaluation harness capable of orchestrating multi-agent interactions.<br>• Implement tool integration testing for document analysis, entity extraction, and table parsing.<br>• Evaluate multi-agent orchestration frameworks (e.g., AutoGen, CrewAI, or LangGraph) on complex document sets.<br>• Conduct benchmark stress-tests on agent reasoning and failure recovery loops. |
+| November / December | System Optimization, Interactive UI & Capstone Deliverables | • Optimize agent harness efficiency, reduce tool-calling latency, and mitigate error propagation.<br>• Build an interactive Streamlit dashboard to monitor live agent execution traces, tool calls, and document evaluation metrics.<br>• Finalize clean, reproducible GitHub repository with full harness code, documentation, and stakeholder presentation deck. |
+
+### Stretch Goals
+* **Autonomous Error-Recovery Middleware:** Build an intelligent interception layer that detects failed tool executions or ungrounded responses and automatically re-routes queries with corrected tool arguments.
+* **Cross-Agent Memory Pipeline:** Implement shared context memory across specialized document agents to maintain state during multi-step reasoning over large multi-page document collections.
+* **Plug-and-Play Agent Evaluation Benchmark Suite:** Package the evaluation harness into a modular Python package enabling developers to benchmark custom document agent architectures against standard test cases.
 > **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
 ---
