@@ -49,87 +49,128 @@ The proposal offers a strong, high-visibility outcome in RAG. To ensure success,
 ---
 
 ## 🏢 About Microsoft
-Microsoft is a global technology leader dedicated to empowering every person and organization on the planet to achieve more through innovation in software, cloud computing, and AI services. This project aligns with Microsoft’s objective to modernize enterprise information retrieval, specifically focusing on helping organizations derive actionable insights from massive, unstructured data repositories.
+Microsoft is a global technology leader dedicated to empowering every person and organization on the planet to achieve more through innovation in software, cloud computing, and AI services. 
 
 ---
 
 ## 🎯 The Challenge
 ### Project Summary
-This project challenges students to develop an enterprise-ready document intelligence solution that ingests, indexes, and retrieves information from complex organizational documents. By leveraging RAG frameworks and document parsing, the team will transform static files like PDFs and Word documents into a highly discoverable and trustworthy knowledge base.
+In this project, you will use enterprise documents (PDFs, Word documents, and other unstructured content) and modern AI techniques including vector embeddings, semantic search, retrieval-augmented generation (RAG), and AI agents to build an enterprise-ready document intelligence solution that can ingest, index, retrieve, and answer questions grounded in organizational knowledge. This will help any company address the challenge of making large volumes of unstructured information easily discoverable, trustworthy, and actionable for employees.
 
 ### Success Criteria
-Functional completeness, Answer quality (factual grounding), Citation accuracy, Trustworthiness, User experience, System performance, Enterprise readiness.
+
+Success will be evaluated across several dimensions:
+
+- Functional completeness: Documents are automatically ingested, parsed, indexed, and searchable through a conversational interface.
+- Answer quality: The system retrieves relevant information and generates responses that are factually grounded in the uploaded documents.
+- Citation accuracy: Every response includes references to the source document and relevant section or page, allowing users to verify the answer.
+- Trustworthiness: The system appropriately indicates when sufficient information is unavailable rather than generating unsupported responses.
+- User experience: Users can easily upload documents, manage the knowledge base, and interact with the system using natural language.
+- System performance: Responses are returned within an acceptable time, and new or updated documents are reflected in the knowledge base after ingestion.
+- Enterprise readiness: The architecture is modular, well documented, and designed so local components (LLMs, vector databases, storage) can be replaced with enterprise services without major redesign.
+
+### Stretch Goals
+
+_Here are some ways solution can be extended:_
+
+- Multi-document reasoning: Answer questions that require synthesizing information across multiple documents.
+- Advanced document workflows: Support summarization, document comparison, key information extraction, and action item generation.
+- Agentic capabilities: Enable the agent to plan and execute multi-step document tasks rather than responding to a single query.
+- Access control: Implement role-based document permissions to ensure users can only retrieve information from authorized documents.
+- Evaluation framework: Develop automated benchmarks to measure retrieval quality, answer accuracy, citation quality, and hallucination rates.
+- Enterprise integrations: Replace local storage with cloud services or integrate with enterprise repositories such as SharePoint or OneDrive.
+- Observability and governance: Add logging, performance metrics, prompt injection detection, content safety checks, and audit trails.
+- Multimodal document support: Extend the solution to process tables, images, scanned PDFs (OCR), and diagrams.
 
 ### Project Milestones
 Use these milestones to guide your work. Your team will create a GitHub Projects board to track tasks within each milestone.
 
 | Month | Milestone | Key Activities |
-| :--- | :--- | :--- |
-| September | Harness Architecture, Ingestion & Baseline Evaluation | • Define standard agent interfaces and contract schemas for document processing tasks.<br>• Set up document ingestion pipelines for synthetic and public PDF corpora.<br>• Establish baseline benchmarking suite to measure tool-calling accuracy, retrieval precision, and task execution times.<br>• Implement basic single-agent document parsing workflows. |
-| October | Multi-Agent Orchestration & Evaluation Framework | • Construct an agent evaluation harness capable of orchestrating multi-agent interactions.<br>• Implement tool integration testing for document analysis, entity extraction, and table parsing.<br>• Evaluate multi-agent orchestration frameworks (e.g., AutoGen, CrewAI, or LangGraph) on complex document sets.<br>• Conduct benchmark stress-tests on agent reasoning and failure recovery loops. |
-| November / December | System Optimization, Interactive UI & Capstone Deliverables | • Optimize agent harness efficiency, reduce tool-calling latency, and mitigate error propagation.<br>• Build an interactive Streamlit dashboard to monitor live agent execution traces, tool calls, and document evaluation metrics.<br>• Finalize clean, reproducible GitHub repository with full harness code, documentation, and stakeholder presentation deck. |
+|---|---|---|
+| September | [Title] | Build the core document ingestion and retrieval pipeline. |
+| October | [Title] | Transform retrieval into an intelligent document agent. |
+| November | [Title] | Make the solution enterprise-ready and demonstrate its business value. |
 
-### Stretch Goals
-* **Autonomous Error-Recovery Middleware:** Build an intelligent interception layer that detects failed tool executions or ungrounded responses and automatically re-routes queries with corrected tool arguments.
-* **Cross-Agent Memory Pipeline:** Implement shared context memory across specialized document agents to maintain state during multi-step reasoning over large multi-page document collections.
-* **Plug-and-Play Agent Evaluation Benchmark Suite:** Package the evaluation harness into a modular Python package enabling developers to benchmark custom document agent architectures against standard test cases.
 > **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
 ---
 
 ## 📊 Dataset
-**Name and Source:** Enterprise Document Suite (Synthetic/Public Open Source)  
+**Name and Source:** [TBD]
 **Format:** PDF, DOCX, TXT  
 **Size:** under 1gb  
-**Location:** To be initialized in the repository data folder.
+**Location:** [TBD]
+
 
 ### Key Details
-- Enterprise documents (PDFs, Word documents, and other unstructured content). The team will generate synthetic data or use a publicly available one.
-- Focus on consistent metadata extraction and normalization across varying document structures to ensure high-quality retrieval accuracy.
+- [Brief description of what's in the data]
+- [Any known limitations or preprocessing needed]
+- [Link to data dictionary or documentation, if available]
 
 ---
 
 ## 🛠️ Suggested Approach
-**ML Problem Type:** NLP & RAG / Multi-Agent Systems  
+
+**ML Problem Type:** Natural Language Processing (NLP),Large Language Models (LLMs)/ Generative AI
+
 **Recommended Libraries:**
-- Vector embeddings (Sentence-Transformers)
-- Semantic search (FAISS / ChromaDB)
-- Retrieval-augmented generation (LangChain / LlamaIndex)
-- AI agents (LangGraph or equivalent orchestration)
-**Evaluation Metrics:** Ragas (Faithfulness, Answer Relevance, Context Precision), Latency, and Factual Grounding rate.
+- [e.g., pandas, scikit-learn, TensorFlow, Hugging Face]
 
+**Evaluation Metrics:**
+- [e.g., Accuracy, Precision/Recall, RMSE, BLEU score]
+  
 ---
-
 ## 📚 Resources to Get Started
+
 The following resources will help your team understand the problem space and potential technical approaches for this project:
+
 **Background Reading:**
-- Microsoft Research Blog: Advances in Document Intelligence and Large Language Models.
+- [e.g., Link to an article or blog post about the problem domain]
+- [e.g., Link to an industry report or case study]
+
 **Technical Tutorials:**
-- LangChain Documentation: "RAG from Scratch" video series and documentation.
+- [e.g., Link to a free tutorial on the ML technique(s) involved]
+- [e.g., Link to documentation for a key library or tool]
+
 **Code Examples:**
-- Sample GitHub repositories showcasing LlamaIndex ingestion pipelines for PDF documents.
+- [e.g., Link to a relevant GitHub repo]
+- [e.g., Link to a sample implementation or starter code]
+
+**Other:**
+- [Links to any additional resources — e.g., papers, videos, podcasts, etc.]
+
+*Feel free to explore beyond these, and share anything interesting you find with me!*
 
 ---
 
 ## 🤝 How We'll Work Together
-**Check-ins:** During our biweekly 60-min AI Studio Lab Section meeting block (2nd and 4th week of every month)  
-**Communication:** Microsoft Teams or Slack  
-**Response time:** 24-48 hours during business days  
-**Recommended Tools:**
-- **Coding:** Google Colab Free Tier  
-- **Collaboration:** GitHub, Notion  
-- **Virtual Meetings:** Zoom, Google Meet  
+
+**Official check-ins:** During our biweekly 45-minute AI Studio Lab Section meeting block (2nd and 4th week of every month)
+
+ **Other ways to reach out to me with questions:** 
+* [e.g., Your team's channel within Break Through Tech’s Discord space]
+* [e.g., Email; please copy your teammates and AI Studio Coach]
+* [e.g., Request a team check-in on Zoom]
+* [Note: I will aim to respond within 48 hours. Please reach out to your AI Studio Coach with urgent questions.]
+
+> 💡 **Challenge Advisor: Please update the above based on your availability and preference. If you are not able to answer questions or meet with fellows outside of the biweekly Lab Section check-ins, simply write in "N/A (only available during the official check-in times)"**
+
+**Recommended free coding / collaboration tools**
+* […]
+* […]
 
 ---
 
 ## 🚀 Getting Started
-1. **Review this overview document** and note any questions for our first meeting.
-2. **Begin reviewing the dataset** using the link provided in the Dataset section.
-3. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects).
 
-I'm excited to work with you!
+1. **Review this overview document** and note any questions for our first meeting
+2. **Begin reviewing the dataset** using the link above
+3. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+
+I’m excited to work with you!
 
 ---
 
 ## ❓ Questions?
-Please bring any questions to our first meeting during the week of August 24th (Break Through Tech's Bridge to Studio - Session B).
+
+Please bring any questions to our first meeting during the week of August 24th (Break Through Tech’s Bridge to Studio - Session C). 
