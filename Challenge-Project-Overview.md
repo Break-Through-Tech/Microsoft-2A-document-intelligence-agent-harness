@@ -88,9 +88,9 @@ Use these milestones to guide your work. Your team will create a GitHub Projects
 
 | Month | Milestone | Key Activities |
 |---|---|---|
-| September | [Title] | Build the core document ingestion and retrieval pipeline. |
-| October | [Title] | Transform retrieval into an intelligent document agent. |
-| November | [Title] | Make the solution enterprise-ready and demonstrate its business value. |
+| September | Ingestion | Ingestion and indexing pipeline. Extract PDF/DOCX content, chunk it, retain metadata, generate embeddings, persist ChromaDB indexes, and verify repeatable indexing without duplicates. |
+| October | Retrieval | Retrieval and grounded-answer pipeline. Implement top-k retrieval, evidence inspection, answer generation, citations, and refusal for insufficient evidence. Run early retrieval tests and a small Ragas baseline. |
+| November | Integration | Integrated UI and final evaluation. Connect both pipelines in Streamlit, expose citations and intermediate results, compare configurations, run the complete evaluation set, fix weaknesses, and prepare the final demonstration and documentation. |
 
 > **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
