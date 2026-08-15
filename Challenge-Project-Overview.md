@@ -1,26 +1,4 @@
----
 
----
-
-## 📋 BTT Internal Evaluation Notes
-*(This section is for BTT staff and CAs only — remove before sharing with students)*
-
-### Technical Vetting
-| Check | Status | Notes |
-| :--- | :--- | :--- |
-| Python Compatibility | 🟢 | Project relies on LangChain/LlamaIndex stack, which is standard Python. However, managing agentic flows often drifts into complex orchestrations that may overcomplicate for the student base. |
-| Data Readiness | 🟢 | Unstructured enterprise documents (PDF/Word) inherently require intensive OCR and chunking logic. Without pre-cleaned, ingested data, students risk spending the bulk of the 12 weeks on pipeline engineering rather than RAG optimization. |
-| Resource Check | 🟢 | Resource requirements are low (embedding models are small/local), provided students stick to Hugging Face local models rather than paid OpenAI APIs. |
-
-### Internal Scores
-- **Student Fit Score:** 6/10
-- **Technical Depth Score:** 8/10
-- **Overall Recommendation:** REVISE
-
-### Advisor Feedback Draft
-The proposal offers a strong, high-visibility outcome in RAG. To ensure success, first, explicitly mandate the use of Ragas or TruLens for systematic evaluation to avoid subjective testing. Second, replace the 'Agentic' requirement with a focus on a robust Retrieval-Augmented Generation pipeline. Reserve Agentic AI for the stretch goals, as agents introduce unpredictable execution loops that can be particularly difficult to debug given the AI Studio program's timeframe and resource constraints.
-
----
 
 # Document Intelligence Agent Harness
 
