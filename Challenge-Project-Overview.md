@@ -25,7 +25,7 @@
 | Check | Status | Notes |
 | :--- | :--- | :--- |
 | Python Compatibility | 🟢 | Project relies on LangChain/LlamaIndex stack, which is standard Python. However, managing agentic flows often drifts into complex orchestrations that may overcomplicate for the student base. |
-| Data Readiness | 🟡 | Unstructured enterprise documents (PDF/Word) inherently require intensive OCR and chunking logic. Without pre-cleaned, ingested data, students risk spending the bulk of the 12 weeks on pipeline engineering rather than RAG optimization. |
+| Data Readiness | 🟢 | Unstructured enterprise documents (PDF/Word) inherently require intensive OCR and chunking logic. Without pre-cleaned, ingested data, students risk spending the bulk of the 12 weeks on pipeline engineering rather than RAG optimization. |
 | Resource Check | 🟢 | Resource requirements are low (embedding models are small/local), provided students stick to Hugging Face local models rather than paid OpenAI APIs. |
 
 ### Internal Scores
