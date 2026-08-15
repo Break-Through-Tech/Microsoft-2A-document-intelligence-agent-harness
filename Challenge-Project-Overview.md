@@ -125,10 +125,20 @@ Student and campus services
 
 ## 🛠️ Suggested Approach
 
-**ML Problem Type:** Natural Language Processing (NLP),Large Language Models (LLMs)/ Generative AI
-
-**Recommended Libraries:**
-- [e.g., pandas, scikit-learn, TensorFlow, Hugging Face]
+**Recommended Technical Stack:**
+- Python 3.11  
+- `venv` and `pip`  
+- A pinned `requirements.txt`  
+- Streamlit for the user interface  
+- Ollama for local model execution  
+- `qwen2.5:3b` as the default generation model  
+- `nomic-embed-text` as the embedding model  
+- ChromaDB in persistent embedded mode  
+- PyMuPDF for PDF text extraction  
+- `python-docx` for DOCX text extraction  
+- LangGraph for the required small workflow  
+- Ragas for systematic RAG evaluation  
+- pytest for automated testing  
 
 **Evaluation Metrics:**
 - [e.g., Accuracy, Precision/Recall, RMSE, BLEU score]
