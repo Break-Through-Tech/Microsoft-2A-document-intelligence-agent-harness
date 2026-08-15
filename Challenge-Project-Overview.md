@@ -146,26 +146,48 @@ Student and campus services
 ---
 ## 📚 Resources to Get Started
 
-The following resources will help your team understand the problem space and potential technical approaches for this project:
+The following resources are organized around the three project milestones. Students are not expected to read every page. Begin with the quick-start resources and consult the reference documentation as needed.
 
-**Background Reading:**
-- [e.g., Link to an article or blog post about the problem domain]
-- [e.g., Link to an industry report or case study]
+### Background Reading
 
-**Technical Tutorials:**
-- [e.g., Link to a free tutorial on the ML technique(s) involved]
-- [e.g., Link to documentation for a key library or tool]
+- [What is Retrieval-Augmented Generation (RAG)?](https://www.ibm.com/think/topics/retrieval-augmented-generation) — An introductory explanation of retrieval, grounding, and generation.
+- [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — The original RAG paper. The abstract and architecture diagram are sufficient for initial reading.
+- [Embeddings — Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/embeddings) — An introduction to representing text as vectors and measuring similarity.
+- [Ragas Concepts](https://docs.ragas.io/en/stable/concepts/) — An overview of systematic evaluation for RAG applications.
 
-**Code Examples:**
-- [e.g., Link to a relevant GitHub repo]
-- [e.g., Link to a sample implementation or starter code]
+### September: Ingestion and Indexing
 
-**Other:**
-- [Links to any additional resources — e.g., papers, videos, podcasts, etc.]
+- [Python Virtual Environments](https://docs.python.org/3.11/tutorial/venv.html) — Creating and managing the project environment.
+- [PyMuPDF Tutorial](https://pymupdf.readthedocs.io/en/latest/tutorial.html) — Extracting text and page metadata from PDF files.
+- [python-docx Quick Start](https://python-docx.readthedocs.io/en/latest/user/quickstart.html) — Reading paragraphs and tables from DOCX files.
+- [Ollama Quick Start](https://docs.ollama.com/quickstart) — Installing Ollama and running models locally.
+- [nomic-embed-text](https://ollama.com/library/nomic-embed-text) — The local embedding model used by this project.
+- [Chroma Getting Started](https://docs.trychroma.com/docs/overview/getting-started) — Creating collections, storing embeddings and metadata, and running local similarity searches.
 
-*Feel free to explore beyond these, and share anything interesting you find with me!*
+### October: Retrieval and Grounded Answers
 
----
+- [Ollama Python Library](https://github.com/ollama/ollama-python) — Calling local generation and embedding models from Python.
+- [qwen2.5:3b](https://ollama.com/library/qwen2.5:3b) — The default local generation model used by this project.
+- [Querying Chroma Collections](https://docs.trychroma.com/docs/querying-collections/query-and-get) — Retrieving top-k results and applying metadata filters.
+- [LangGraph Graph API](https://docs.langchain.com/oss/python/langgraph/graph-api) — Building the small retrieve → assess evidence → answer or refuse workflow.
+- [Prompt Engineering Guide](https://www.promptingguide.ai/) — A practical introduction to prompts, grounding instructions, and structured responses.
+
+### November: User Interface, Testing, and Evaluation
+
+- [Streamlit Get Started](https://docs.streamlit.io/get-started) — Building and running the local application.
+- [Streamlit Chat Elements](https://docs.streamlit.io/develop/api-reference/chat) — Creating a question-and-answer interface.
+- [Ragas Get Started](https://docs.ragas.io/en/stable/getstarted/) — Running systematic RAG evaluations.
+- [Ragas Metrics](https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/) — Reference material for faithfulness, answer relevancy, context precision, and context recall.
+- [pytest Getting Started](https://docs.pytest.org/en/stable/getting-started.html) — Writing and running automated tests.
+
+### Code and Collaboration Tools
+
+- [Visual Studio Code Python Tutorial](https://code.visualstudio.com/docs/python/python-tutorial)
+- [GitHub Projects Documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+- [GitHub Pull Request Documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests)
+- [Mermaid Live Editor](https://mermaid.live/) — Creating architecture and workflow diagrams.
+
+> **Local-only requirement:** Examples in some external documentation may use hosted models or API keys. For this project, use Ollama with `qwen2.5:3b` and `nomic-embed-text`. No paid cloud account or external model API is required.  
 
 ## 🤝 How We'll Work Together
 
@@ -176,12 +198,6 @@ The following resources will help your team understand the problem space and pot
 * [e.g., Email; please copy your teammates and AI Studio Coach]
 * [e.g., Request a team check-in on Zoom]
 * [Note: I will aim to respond within 48 hours. Please reach out to your AI Studio Coach with urgent questions.]
-
-> 💡 **Challenge Advisor: Please update the above based on your availability and preference. If you are not able to answer questions or meet with fellows outside of the biweekly Lab Section check-ins, simply write in "N/A (only available during the official check-in times)"**
-
-**Recommended free coding / collaboration tools**
-* […]
-* […]
 
 ---
 
