@@ -97,16 +97,29 @@ Use these milestones to guide your work. Your team will create a GitHub Projects
 ---
 
 ## 📊 Dataset
-**Name and Source:** [TBD]
+**Name and Source:** Northstar University Knowledge Base  
 **Format:** PDF, DOCX, TXT  
 **Size:** under 1gb  
-**Location:** [TBD]
+**Location:** data folder  
 
+Team will use the Northstar University Knowledge Base, a fully synthetic collection of university policies and student-service documents created specifically for this project. All institutions, people, programs, contact details, and policies in the dataset are fictional; the corpus contains no personal or confidential information.
 
-### Key Details
-- [Brief description of what's in the data]
-- [Any known limitations or preprocessing needed]
-- [Link to data dictionary or documentation, if available]
+**The dataset contains**   
+10 documents totaling 50 pages   
+7 searchable PDF files and 3 DOCX files   
+Approximately 5,200 words of extracted text   
+9 current documents and 1 superseded policy   
+
+**The documents cover**  
+Academic integrity and use of generative AI  
+Examinations, grading, and academic standing  
+Admissions and enrollment  
+Attendance and course participation  
+Scholarships and financial aid  
+Internships  
+Library services  
+Laboratory safety  
+Student and campus services  
 
 ---
 
